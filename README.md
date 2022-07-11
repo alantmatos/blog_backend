@@ -311,3 +311,4 @@ When we create a dog, we'll send this as the raw body in JSON format:
   - If you click on the navbar link to `/walks` you should see a list of walks there if you've completed the first endpoint.
   - If you fill in the form in the react client to create a walk, it will appear in the browser if the endpoint is properly configured
   - If you click on the trash can icon in the react client, it should remove the walk from the database. # blog_backend
+# blog-phase3-project
