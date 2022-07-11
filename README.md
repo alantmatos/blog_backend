@@ -1,23 +1,13 @@
-## 7. Web API with Sinatra 
-### SWBAT
+## Web API with Sinatra 
 
-- [ ] Review databases vs servers vs APIs
-- [ ] Review client-side vs server-side routing
-- [ ] Review HTTP verbs
-- [ ] Explain what MVC is and why it’s a popular pattern
-- [ ] Observe how to create a controller and handle routing w/ controller actions
-- [ ] Observe how to create dynamic routes
-- [ ] Explain what params are and how to access them
-- [ ] Observe using Postman to test server-side routes
 
-## Deliverables:
 
 Build out the following endpoints:
 
 | Endpoint | info from client in request | info from server in response |
 |---|---|---|
-| `get '/dogs'` | none | an array of objects (in JSON format) containing dogs and their data |
-| `get '/dogs/:id'` | id | a specific dog given the id |
+| `get '/sample'` | none | an array of objects (in JSON format) containing dogs and their data |
+| `get '/sample/:id'` | id | a specific dog given the id |
 
 ## Understanding Sinatra
 
@@ -48,15 +38,15 @@ When we're first building web applications as an API backend, our focus is on bu
 > The terms route and endpoint are used interchangeably when talking about possible requests we can send to an API.
 
 - the HTTP verb (get, post, put, patch, or delete)
-- the path (`"/"`, `"/dogs"`, `"/walks"`)
+- the path (`"/"`, `"/sample1"`, `"/sample2"`)
 - the JSON that we want to send back as a response
-  - We might make a query to our database using `Dog.all` and then convert the results to JSON and return that 
+  - We might make a query to our database using `sample.all` and then convert the results to JSON and return that 
 
 An example might look like this:
 
 ```rb
-get "/dogs" do
-    Dog.all.to_json
+get "/sample" do
+    Sample.all.to_json
 end
 ```
 
